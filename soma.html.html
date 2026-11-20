@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة VIP: افتتاح فرع سوما للعبايات الخليجي ✨</title>
+
+    <!-- أيقونة التبويب (Favicon) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230a0a0a%22/><text x=%2250%25%22 y=%2270%25%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22%23d4af37%22 font-family=%22serif%22 font-weight=%22bold%22>S</text><text x=%2250%25%22 y=%2230%25%22 font-size=%2224%22 text-anchor=%22middle%22>👑</text></svg>">
+
+    <!-- إعدادات المعاينة التلقائية للواتساب والسوشيال ميديا -->
+    <meta property="og:title" content="دعوة VIP: افتتاح فرع سوما للعبايات الخليجي ✨" />
+    <meta property="og:description" content="خصومات حصرية وهدايا لأول الحاضرين! ١٧ شارع البطراوي - بجوار هارديز - بداخل سنتر البطراوي." />
+    <meta property="og:image" content="https://zyadn6920-max.github.io/soma/logo.png" />
+    <meta property="og:type" content="website" />
+
+    <!-- استدعاء خطوط عربية فاخرة من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- استدعاء مكتبة Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- استدعاء مكتبة الأيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        amiri: ['Amiri', 'serif'],
+                    },
+                    colors: {
+                        royalBlack: '#0a0a0a',
+                        charcoal: '#141414',
+                        goldPrimary: '#d4af37',
+                        goldLight: '#f3e5ab',
+                        goldDark: '#aa8220',
+                        champagne: '#FAF6EE',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* تنسيقات مخصصة للتدرجات الذهبية واللمسات الملكية */
+        body {
+            background-color: #0a0a0a;
+            color: #FAF6EE;
+            font-family: 'Cairo', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa8220 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-gradient-bg {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #c59b27 100%);
+        }
+
+        .gold-border {
+            border: 1px solid rgba(212, 175, 55, 0.35);
+        }
+
+        .gold-glow {
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.18);
+        }
+
+        .gold-glow-hover:hover {
+            box-shadow: 0 0 35px rgba(212, 175, 55, 0.45);
+            transform: translateY(-2px);
+        }
+
+        .luxury-pattern {
+            background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+
+        @keyframes pulseGold {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.5); }
+            50% { box-shadow: 0 0 0 14px rgba(212, 175, 55, 0); }
+        }
+
+        .animate-pulse-gold {
+            animation: pulseGold 2.5s infinite;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(25px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #f3e5ab;
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0;
+            animation: floatSparkle 6s infinite ease-in-out;
+        }
+
+        @keyframes floatSparkle {
+            0% { transform: translateY(0) scale(0.5); opacity: 0; }
+            50% { opacity: 0.85; }
+            100% { transform: translateY(-120px) scale(1.2); opacity: 0; }
+        }
+    </style>
+</head>
+<body class="luxury-pattern min-h-screen relative selection:bg-goldPrimary selection:text-royalBlack">
+
+    <!-- حاوية الجزيئات الذهبية الخلفية -->
+    <div id="sparkles-container" class="fixed inset-0 pointer-events-none z-0 overflow-hidden"></div>
+
+    <!-- شاشة الغلاف الترحيبية (بطاقة الدعوة المغلقة) -->
+    <div id="envelope-screen" class="fixed inset-0 z-50 bg-royalBlack flex flex-col items-center justify-center p-4 transition-all duration-700">
+        <div class="max-w-md w-full bg-charcoal gold-border rounded-3xl p-8 text-center gold-glow relative overflow-hidden">
+            <!-- إطار داخلي زخرفي -->
+            <div class="absolute inset-2.5 border border-goldPrimary/20 rounded-2xl pointer-events-none"></div>
+
+            <!-- شعار سوما (بنت ترتدي عباية خليجية وطرحة منسدلة) -->
+            <div class="w-32 h-32 mx-auto mb-5 relative flex items-center justify-center">
+                <div class="absolute inset-0 rounded-full bg-goldPrimary/15 blur-xl"></div>
+                <svg viewBox="0 0 200 200" class="w-full h-full relative z-10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="goldGradCover" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#f3e5ab"/>
+                            <stop offset="50%" stop-color="#d4af37"/>
+                            <stop offset="100%" stop-color="#aa8220"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="92" stroke="url(#goldGradCover)" stroke-width="2" stroke-dasharray="4 2"/>
+                    <circle cx="100" cy="100" r="85" stroke="url(#goldGradCover)" stroke-width="1"/>
+                    <!-- رسمة العباية والطرحة الخليجية -->
+                    <path d="M100 32 C82 32, 72 48, 70 70 C67 98, 52 135, 42 162 L158 162 C148 135, 133 98, 130 70 C128 48, 118 32, 100 32 Z" fill="#141414" stroke="url(#goldGradCover)" stroke-width="2.5"/>
+                    <path d="M88 58 C88 73, 94 82, 100 82 C106 82, 112 73, 112 58 C112 47, 106 42, 100 42 C94 42, 88 47, 88 58 Z" stroke="url(#goldGradCover)" stroke-width="1.8" fill="#0a0a0a"/>
+                    <path d="M88 54 C76 68, 72 105, 84 138" stroke="url(#goldGradCover)" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M112 54 C124 68, 128 105, 116 138" stroke="url(#goldGradCover)" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M100 82 L100 162" stroke="url(#goldGradCover)" stroke-width="2" stroke-dasharray="3 3"/>
+                    <path d="M72 86 C55 102, 46 125, 42 158" stroke="url(#goldGradCover)" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M128 86 C145 102, 154 125, 158 158" stroke="url(#goldGradCover)" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M95 25 L100 19 L105 25 L100 28 Z" fill="url(#goldGradCover)"/>
+                </svg>
+            </div>
+
+            <h2 class="font-amiri text-3xl sm:text-4xl font-bold gold-gradient-text mb-1">سوما للعبايات الخليجي</h2>
+            <p class="text-xs tracking-widest text-goldLight/70 uppercase mb-6">SOMA GULF ABAYAS</p>
+
+            <div class="w-16 h-0.5 bg-gradient-to-r from-transparent via-goldPrimary to-transparent mx-auto mb-6"></div>
+
+            <p class="text-champagne/90 text-base leading-relaxed mb-8">
+                يسرّنا دعوتكِ بكل حب لحضور الافتتاح الكبير لفرعنا الجديد، حيث تلتقي الفخامة بالأناقة الخليجية الأصيلة.
+            </p>
+
+            <button onclick="openInvitation()" class="w-full py-4 px-6 rounded-2xl gold-gradient-bg text-royalBlack font-extrabold text-lg shadow-lg animate-pulse-gold transition-transform active:scale-95 flex items-center justify-center gap-3 cursor-pointer">
+                <span>افتحي بطاقة الدعوة ✨</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- المحتوى الرئيسي للدعوة -->
+    <main id="main-content" class="relative z-10 max-w-3xl mx-auto px-4 py-8 sm:py-12 hidden">
+        
+        <!-- الهيدر والشعار -->
+        <header class="text-center mb-10 fade-in-up">
+            <div class="inline-block p-1.5 rounded-full gold-border bg-charcoal/80 mb-4 gold-glow">
+                <svg viewBox="0 0 200 200" class="w-28 h-28 sm:w-32 sm:h-32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="goldGradMain" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#f3e5ab"/>
+                            <stop offset="50%" stop-color="#d4af37"/>
+                            <stop offset="100%" stop-color="#aa8220"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="100" cy="100" r="92" stroke="url(#goldGradMain)" stroke-width="2" stroke-dasharray="4 2"/>
+                    <circle cx="100" cy="100" r="85" stroke="url(#goldGradMain)" stroke-width="1"/>
+                    <path d="M100 32 C82 32, 72 48, 70 70 C67 98, 52 135, 42 162 L158 162 C148 135, 133 98, 130 70 C128 48, 118 32, 100 32 Z" fill="#141414" stroke="url(#goldGradMain)" stroke-width="2.5"/>
+                    <path d="M88 58 C88 73, 94 82, 100 82 C106 82, 112 73, 112 58 C112 47, 106 42, 100 42 C94 42, 88 47, 88 58 Z" stroke="url(#goldGradMain)" stroke-width="1.8" fill="#0a0a0a"/>
+                    <path d="M88 54 C76 68, 72 105, 84 138" stroke="url(#goldGradMain)" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M112 54 C124 68, 128 105, 116 138" stroke="url(#goldGradMain)" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M100 82 L100 162" stroke="url(#goldGradMain)" stroke-width="2" stroke-dasharray="3 3"/>
+                    <path d="M72 86 C55 102, 46 125, 42 158" stroke="url(#goldGradMain)" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M128 86 C145 102, 154 125, 158 158" stroke="url(#goldGradMain)" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M95 25 L100 19 L105 25 L100 28 Z" fill="url(#goldGradMain)"/>
+                </svg>
+            </div>
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-goldPrimary/10 border border-goldPrimary/30 text-goldLight text-xs sm:text-sm font-semibold mb-3">
+                <i class="fa-solid fa-crown text-goldPrimary"></i>
+                <span>دعوة VIP لحضور الافتتاح الكبير</span>
+            </div>
+
+            <h1 class="font-amiri text-4xl sm:text-6xl font-bold gold-gradient-text mb-3 leading-tight">
+                سوما للعبايات الخليجي
+            </h1>
+            <p class="text-champagne/85 text-base sm:text-lg max-w-xl mx-auto leading-relaxed">
+                يا هلا بكل ملكة تبحث عن الشياكة والأناقة الخليجية الأصيلة! يسعدنا تشريفكِ في افتتاح فرعنا الجديد بأرقى التشكيلات العصرية.
+            </p>
+        </header>
+
+        <!-- قسم مفاجآت وعروض الافتتاح -->
+        <section class="mb-8 fade-in-up" style="animation-delay: 0.15s;">
+            <div class="bg-charcoal/95 backdrop-blur-md gold-border rounded-3xl p-6 sm:p-8 gold-glow">
+                <div class="flex items-center justify-center gap-3 mb-6">
+                    <span class="h-px w-10 bg-goldPrimary/40"></span>
+                    <h2 class="font-amiri text-2xl sm:text-3xl font-bold text-goldLight text-center">
+                        مفاجآت وعروض الافتتاح الكبرى
+                    </h2>
+                    <span class="h-px w-10 bg-goldPrimary/40"></span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+                    <!-- العرض الأول -->
+                    <div class="bg-royalBlack/90 border border-goldPrimary/25 rounded-2xl p-5 flex items-start gap-4 transition-all hover:border-goldPrimary/60">
+                        <div class="w-12 h-12 rounded-xl gold-gradient-bg text-royalBlack flex items-center justify-center shrink-0 text-xl font-bold">
+                            <i class="fa-solid fa-tags"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-goldLight mb-1">خصومات حصرية لفترة محدودة</h3>
+                            <p class="text-sm text-champagne/75 leading-relaxed">
+                                تخفيضات خاصة على أحدث موديلات العبايات الخليجي، الكريب الملكي، والتطريز اليدوي الفاخر.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- العرض الثاني -->
+                    <div class="bg-royalBlack/90 border border-goldPrimary/25 rounded-2xl p-5 flex items-start gap-4 transition-all hover:border-goldPrimary/60">
+                        <div class="w-12 h-12 rounded-xl gold-gradient-bg text-royalBlack flex items-center justify-center shrink-0 text-xl font-bold">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg text-goldLight mb-1">هدايا مميزة لأول الحاضرين</h3>
+                            <p class="text-sm text-champagne/75 leading-relaxed">
+                                طرحة خليجية هدية مجانية وقسائم شراء فورية لأول الحاضرات في حفل الافتتاح.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مولد كود الخصم التفاعلي -->
+                <div class="bg-gradient-to-r from-royalBlack via-charcoal to-royalBlack border border-goldPrimary/40 rounded-2xl p-5 text-center">
+                    <p class="text-sm text-goldLight mb-3 font-semibold">
+                        <i class="fa-solid fa-sparkles text-goldPrimary ml-1"></i>
+                        احصلي على كود خصم VIP إضافي عند زيارتكِ للفرع:
+                    </p>
+                    
+                    <div id="voucher-trigger">
+                        <button onclick="revealVoucher()" class="px-6 py-3 rounded-xl border border-goldPrimary text-goldLight hover:bg-goldPrimary hover:text-royalBlack font-bold transition-all cursor-pointer">
+                            اضغطي لإظهار كود الخصم الخاص بكِ
+                        </button>
+                    </div>
+
+                    <div id="voucher-box" class="hidden flex-col sm:flex-row items-center justify-center gap-3 mt-2">
+                        <div class="px-6 py-2.5 rounded-xl bg-royalBlack border-2 border-dashed border-goldPrimary text-goldPrimary font-mono text-xl font-bold tracking-wider">
+                            SOMA-VIP25
+                        </div>
+                        <button onclick="copyText('SOMA-VIP25', 'تم نسخ كود الخصم SOMA-VIP25 بنجاح!')" class="px-4 py-2.5 rounded-xl gold-gradient-bg text-royalBlack font-bold text-sm flex items-center gap-2 cursor-pointer active:scale-95">
+                            <i class="fa-regular fa-copy"></i>
+                            <span>نسخ الكود</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم العنوان والتواصل -->
+        <section class="mb-8 fade-in-up" style="animation-delay: 0.3s;">
+            <div class="bg-charcoal/95 backdrop-blur-md gold-border rounded-3xl p-6 sm:p-8 gold-glow">
+                <h2 class="font-amiri text-2xl sm:text-3xl font-bold text-goldLight text-center mb-6">
+                    موقع الفرع الجديد والتواصل
+                </h2>
+
+                <div class="space-y-4">
+                    <!-- صندوق العنوان -->
+                    <div class="bg-royalBlack/90 border border-goldPrimary/25 rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-full bg-goldPrimary/15 border border-goldPrimary/40 text-goldPrimary flex items-center justify-center shrink-0 text-xl mt-1 sm:mt-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs text-goldPrimary font-bold block mb-1">العنوان بالتفصيل:</span>
+                                <p class="text-base sm:text-lg font-bold text-champagne leading-snug">
+                                    ١٧ شارع البطراوي - بجوار هارديز - بداخل سنتر البطراوي
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="copyText('١٧ شارع البطراوي - بجوار هارديز - بداخل سنتر البطراوي', 'تم نسخ عنوان الفرع بنجاح!')" class="w-full sm:w-auto px-4 py-2.5 rounded-xl bg-goldPrimary/15 hover:bg-goldPrimary/25 border border-goldPrimary/40 text-goldLight text-sm font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer shrink-0">
+                            <i class="fa-regular fa-copy"></i>
+                            <span>نسخ العنوان</span>
+                        </button>
+                    </div>
+
+                    <!-- أزرار التواصل المباشر -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                        <!-- واتساب -->
+                        <a href="https://wa.me/201273338375?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%20%D8%B3%D9%88%D9%85%D8%A7%20%D9%84%D9%84%D8%B9%D8%A8%D8%A7%D9%8A%D8%A7%D8%AA%20%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%D9%8A%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%B9%D8%B1%D9%88%D8%B6%20%D8%A7%D9%84%D8%A7%D9%81%D8%AA%D8%AA%D8%A7%D8%AD" target="_blank" rel="noopener noreferrer" class="py-4 px-5 rounded-2xl bg-[#182920] hover:bg-[#20362a] border border-emerald-500/40 text-emerald-300 font-bold flex items-center justify-center gap-3 transition-all">
+                            <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+                            <div class="text-right">
+                                <span class="block text-xs text-emerald-400/80">تواصلي معنا عبر واتساب</span>
+                                <span dir="ltr" class="text-base font-mono">01273338375</span>
+                            </div>
+                        </a>
+
+                        <!-- اتصال هاتفي -->
+                        <a href="tel:01273338375" class="py-4 px-5 rounded-2xl bg-royalBlack hover:bg-goldPrimary/10 border border-goldPrimary/40 text-goldLight font-bold flex items-center justify-center gap-3 transition-all">
+                            <i class="fa-solid fa-phone-volume text-xl text-goldPrimary"></i>
+                            <div class="text-right">
+                                <span class="block text-xs text-goldLight/70">للحجز والاستفسار هاتفياً</span>
+                                <span dir="ltr" class="text-base font-mono">01273338375</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم إصدار بطاقة دخول VIP باسم الضيفة -->
+        <section class="mb-8 fade-in-up" style="animation-delay: 0.45s;">
+            <div class="bg-charcoal/95 backdrop-blur-md gold-border rounded-3xl p-6 sm:p-8 gold-glow">
+                <h2 class="font-amiri text-2xl sm:text-3xl font-bold text-goldLight text-center mb-2">
+                    احجزي بطاقة دعوتكِ الشخصية (VIP)
+                </h2>
+                <p class="text-center text-sm text-champagne/75 mb-6">
+                    اكتبي اسمكِ للحصول على بطاقة حضور رقمية خاصة بكِ في حفل الافتتاح
+                </p>
+
+                <form id="vip-form" onsubmit="generateVipCard(event)" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                    <input type="text" id="guest-name-input" required placeholder="اكتبي اسمكِ الكريم هنا (مثال: أ. سارة محمد)" class="flex-1 px-5 py-3.5 rounded-xl bg-royalBlack border border-goldPrimary/40 text-champagne placeholder-champagne/40 focus:outline-none focus:border-goldPrimary text-base">
+                    <button type="submit" class="px-6 py-3.5 rounded-xl gold-gradient-bg text-royalBlack font-bold text-base gold-glow-hover transition-all cursor-pointer shrink-0">
+                        إصدار البطاقة
+                    </button>
+                </form>
+
+                <!-- البطاقة الشخصية التي تظهر بعد إدخال الاسم -->
+                <div id="vip-card-result" class="hidden mt-8 max-w-md mx-auto">
+                    <div class="relative bg-gradient-to-br from-[#1f1b13] via-[#0a0a0a] to-[#1f1a10] border-2 border-goldPrimary rounded-2xl p-6 text-center shadow-2xl overflow-hidden">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-goldPrimary/10 rounded-bl-full"></div>
+                        <div class="absolute bottom-0 left-0 w-24 h-24 bg-goldPrimary/10 rounded-tr-full"></div>
+                        
+                        <div class="flex items-center justify-between border-b border-goldPrimary/30 pb-3 mb-4">
+                            <span class="text-xs font-bold tracking-widest text-goldPrimary">VIP PASS</span>
+                            <span class="font-amiri font-bold text-goldLight">سوما للعبايات الخليجي</span>
+                        </div>
+
+                        <p class="text-xs text-champagne/70 mb-1">يسعدنا تشريف ضيفتنا الكريمة:</p>
+                        <h3 id="display-guest-name" class="font-amiri text-3xl font-bold gold-gradient-text my-2"></h3>
+                        
+                        <div class="inline-block px-3 py-1 rounded-full bg-goldPrimary/15 border border-goldPrimary/30 text-xs text-goldLight mt-2 mb-4">
+                            أولوية الدخول + هدية الافتتاح الترحيبية
+                        </div>
+
+                        <div class="text-xs text-champagne/60 border-t border-goldPrimary/20 pt-3 flex items-center justify-between">
+                            <span>١٧ ش البطراوي - سنتر البطراوي</span>
+                            <span dir="ltr">01273338375</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم مشاركة الدعوة مع الصديقات -->
+        <footer class="text-center pb-8 fade-in-up" style="animation-delay: 0.6s;">
+            <div class="bg-charcoal/70 border border-goldPrimary/25 rounded-3xl p-6 mb-6">
+                <h3 class="font-bold text-lg text-goldLight mb-2">شاركي الدعوة مع صديقاتكِ وعائلتكِ</h3>
+                <p class="text-sm text-champagne/70 mb-4">ابعتي لينك الدعوة على واتساب عشان تيجوا تنورونا سوا!</p>
+                
+                <div class="flex flex-wrap items-center justify-center gap-3">
+                    <button onclick="shareInvitation()" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm flex items-center gap-2 transition-all cursor-pointer shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>إرسال الدعوة عبر واتساب</span>
+                    </button>
+                    
+                    <button onclick="copyFullInvite()" class="px-6 py-3 rounded-xl bg-royalBlack hover:bg-goldPrimary/15 border border-goldPrimary/40 text-goldLight font-bold text-sm flex items-center gap-2 transition-all cursor-pointer">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <span>نسخ نص الدعوة والرابط</span>
+                    </button>
+                </div>
+            </div>
+
+            <p class="font-amiri text-xl text-goldLight mb-1">«سوما».. أناقتكِ تبدأ من هنا</p>
+            <p class="text-xs text-champagne/40">جميع الحقوق محفوظة © سوما للعبايات الخليجي</p>
+        </footer>
+    </main>
+
+    <!-- إشعار منبثق (Toast) -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-goldPrimary text-royalBlack font-bold px-6 py-3 rounded-full shadow-2xl flex items-center gap-2 transition-all duration-300 opacity-0 pointer-events-none translate-y-4">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">تم النسخ بنجاح</span>
+    </div>
+
+    <script>
+        function createSparkles() {
+            const container = document.getElementById('sparkles-container');
+            for (let i = 0; i < 20; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = Math.random() * 100 + 'vw';
+                sparkle.style.top = (Math.random() * 100 + 20) + 'vh';
+                sparkle.style.animationDelay = (Math.random() * 6) + 's';
+                sparkle.style.animationDuration = (4 + Math.random() * 4) + 's';
+                container.appendChild(sparkle);
+            }
+        }
+
+        function openInvitation() {
+            const envelope = document.getElementById('envelope-screen');
+            const main = document.getElementById('main-content');
+            
+            envelope.style.opacity = '0';
+            envelope.style.transform = 'scale(1.05)';
+            
+            setTimeout(() => {
+                envelope.classList.add('hidden');
+                main.classList.remove('hidden');
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }, 550);
+        }
+
+        function revealVoucher() {
+            document.getElementById('voucher-trigger').classList.add('hidden');
+            const box = document.getElementById('voucher-box');
+            box.classList.remove('hidden');
+            box.classList.add('flex');
+            showToast('مبروك! تم تفعيل كود خصم الافتتاح الخاص بكِ');
+        }
+
+        function generateVipCard(e) {
+            e.preventDefault();
+            const input = document.getElementById('guest-name-input');
+            const name = input.value.trim();
+            if (!name) return;
+
+            document.getElementById('display-guest-name').textContent = name;
+            const result = document.getElementById('vip-card-result');
+            result.classList.remove('hidden');
+            result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            showToast('تم إصدار بطاقة VIP الخاصة بكِ بنجاح!');
+        }
+
+        function copyText(text, message) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(message);
+        }
+
+        function getInviteShareText() {
+            const currentUrl = window.location.href;
+            return `✨ دعوة VIP لحضور الافتتاح الكبير! ✨\n\nفرع "سوما للعبايات الخليجي" 👑\nأرقى تصاميم العبايات الخليجي بخصومات حصرية وهدايا لأول الحاضرين!\n\n📍 العنوان: ١٧ شارع البطراوي - بجوار هارديز - بداخل سنتر البطراوي\n📞 للتواصل: 01273338375\n\nافتحي بطاقة الدعوة واحصلي على كود الخصم وبطاقة VIP من هنا:\n${currentUrl}`;
+        }
+
+        function shareInvitation() {
+            const shareText = getInviteShareText();
+            if (navigator.share) {
+                navigator.share({
+                    title: 'دعوة VIP: افتتاح فرع سوما للعبايات الخليجي ✨',
+                    text: shareText,
+                    url: window.location.href
+                }).catch(() => {
+                    window.open(`https://wa.me/?text=${encodeURIComponent(shareText)}`, '_blank');
+                });
+            } else {
+                window.open(`https://wa.me/?text=${encodeURIComponent(shareText)}`, '_blank');
+            }
+        }
+
+        function copyFullInvite() {
+            copyText(getInviteShareText(), 'تم نسخ نص الدعوة والرابط لمشاركته مع من تحبين!');
+        }
+
+        let toastTimeout;
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-message');
+            toastMsg.textContent = msg;
+            
+            toast.classList.remove('opacity-0', 'translate-y-4');
+            toast.classList.add('opacity-100', 'translate-y-0');
+
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toast.classList.remove('opacity-100', 'translate-y-0');
+                toast.classList.add('opacity-0', 'translate-y-4');
+            }, 3200);
+        }
+
+        window.onload = function() {
+            createSparkles();
+        };
+    </script>
+</body>
+</html>
